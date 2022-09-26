@@ -35,6 +35,7 @@ app.get('/welcome_page', (req, res) => {
 })
 
 require('./routes/user.router')(app)
+require('./routes/post.router')(app)
 
 const PORT = process.env.PORT || 8080
 app.listen(PORT, () => {
